@@ -52,19 +52,19 @@ class _HomeTabState extends State<Home> {
   static const _bottomBarItems = [
     {
       "icon": Icon(Icons.home),
-      "title": Text('Home'),
+      "title": 'Home',
     },
     {
       "icon": Icon(Icons.ac_unit),
-      "title": Text('Placeholder'),
+      "title": 'Placeholder',
     },
     {
       "icon": Icon(Icons.help),
-      "title": Text('Ajuda'),
+      "title": 'Ajuda',
     },
     {
       "icon": Icon(Icons.person, color: Colors.grey),
-      "title": Text('Perfil'),
+      "title": 'Perfil',
     }
   ];
 
@@ -137,7 +137,7 @@ class _HomeTabState extends State<Home> {
             .map(
               (item) => BottomNavigationBarItem(
                 icon: item['icon'],
-                title: item['title'],
+                label: item['title'],
               ),
             )
             .toList(),
